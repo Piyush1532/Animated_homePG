@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+    font-family: "Poppins",sans-serif;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height:100% ;
+}
+
+:root{
+    --primary-color:#040404;
+    --white-color:#ffffff;
+}
+
+/* Navbar design Start */
+
+.home{
+    width: 100%;
+    height: 100vh;
+}
+
+.home .navbar{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+/* .home .navbar img{
+height: 65%;
+} */
+ .home .navbar h1{
+    height: 65px;
+ }
+
+ .home .navbar .links{
+    display: flex;
+    gap: 3rem;
+ }
+
+ .home .navbar .links a{
+    font-weight: 500;
+    color: rgb(0 0 0 /50%);
+ }
+
+ .home .navbar .links :is(a.active ,a:hover){
+    color: var(--primary-color);
+ }
+
+ .home .navbar .actions{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+ }
+
+ .home .navbar .actions a{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: .9rem;
+ }
+
+ .home .navbar .actions a:last-child{
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    background: var(--primary-color);
+    color: var(--white-color);
+ }
+
+ .home .navbar .actions a:first-child:hover{
+    color: #888;
+ }
+
+ .home .navbar .actions a:last-child:hover{
+  background: #444;  
+ }
+/* Navbar design end */
+
+/* Grid design  start*/
+ .grid{
+width: 100%;
+height: calc(100vh - 55px);
+padding: 1rem 1rem 2rem 1rem;
+display: grid;
+grid-template-columns: auto 1fr;
+gap: .8rem;
+ }
+
+ .grid .grid-row{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: .8rem;
+ }
+.grid .grid-row .text{
+    padding: 1.5rem;
+    background: #efefef;
+    border-radius: 1rem;
+ } 
+ .grid .grid-row .text > span{
+border: 2px solid #666; 
+color: #666;
+border-radius: 1rem;
+font-size: .8rem;
+padding: .2rem 1rem;
+ }
+
+ .grid .grid-row .text h1{
+    font-size: 3rem;
+    line-height:1.2 ;
+    margin: 1rem 0;
+ }
+
+ .grid .grid-row .text p{
+    font-size: .9rem;
+    color: #999;
+    margin-bottom: 1rem;
+ }
+
+ .grid .grid-row .text .actions{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+ }
+ .grid .grid-row .text .actions a:first-child{
+    background: var(--primary-color);
+    padding: .5rem 1rem;
+    border-radius: 6px ;
+    font-size: .8rem;
+    color: var(--white-color);
+ }
+
+
+ .grid .grid-row .text .actions a:first-child i{
+    margin-right: 5px;
+ }
+
+ .grid .grid-row .text .actions a:last-child{
+    color: #444;
+    font-size: .8rem;
+ }
+
+ .grid .grid-row .text .actions a:last-child span{
+background: var(--white-color);
+display: inline-block;
+width: 35px;
+height: 35px;
+border-radius: 50%;
+vertical-align: middle;
+margin-right: 0.5rem;
+position: relative;
+ }
+
+ .grid .grid-row .text .actions a:last-child span i{
+    color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%,-50%);
+ }
+
+ .grid .grid-row .right-img{
+    width: 100%;
+    height: 100%;
+    background: url("https://images.unsplash.com/photo-1521584934521-f27ac11b7523?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+border-radius: 1rem;
+position: relative;
+ }
+ 
+ .grid .grid-row .right-img .img{
+   width: 40%;
+   height: 40%;
+   background-color: var(--white-color);
+   position: absolute;
+   right: 0; 
+   bottom: 0;
+   padding-top: 0.8rem;
+   padding-left: 0.8rem;
+   border-top-left-radius: 1rem;
+ }
+
+ .grid .grid-row .right-img::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+     box-shadow: 14px 14px 0 var(--white-color);
+ }
+
+
+ .grid .grid-row .right-img::after{
+    content: "";
+    position: absolute;
+    bottom: 40%;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+     box-shadow: 14px 14px 0 var(--white-color);
+ }
+ .grid .grid-row .right-img .img img{
+    width: 100%;
+    height: 100%;
+object-fit: cover;
+object-position: center;
+border-radius:1rem ;
+}
+
+ /* Grid design end */
